@@ -65,12 +65,6 @@ public class Database {
 		return Arrays.copyOf(accounts, count);
 	}
 	
-	/**
-	 * Retrieves an account by account number.
-	 * 
-	 * @param accountNumber the account number of the account to retrieve
-	 * @return a BankAccount
-	 */
 	
 	public BankAccount getAccount(long accountNumber) {
 		for (String account : accounts) {
@@ -82,13 +76,7 @@ public class Database {
 		return null;
 	}
 	
-	/**
-	 * Updates a BankAccount.
-	 * 
-	 * @param account the primary account being updated
-	 * @param destination the secondary account being updated
-	 * @throws IOException 
-	 */
+
 	
 	public void updateAccount(BankAccount account, BankAccount destination) throws IOException {
 		boolean newAccount = true;
@@ -119,10 +107,7 @@ public class Database {
 		}
 	}
 	
-	/**
-	 * Retrieves the largest account number in the database.
-	 * 
-	 * @return the largest account number
+	
 	 */
 	
 	public long getMaxAccountNumber() {
